@@ -8,6 +8,9 @@ public class Ball : MonoBehaviour
     public float velocity;
     public float position_x;
 
+    public GameObject SystemParticule1;
+    public GameObject SystemParticule2;
+
     private Rigidbody rbody;
     private Score score;
     private Score2 score2;
@@ -28,6 +31,7 @@ public class Ball : MonoBehaviour
     private int choix;
     private int score_actuel_1 = 0;
     private int score_actuel_2 = 0;
+
     public float secondes = 3;
 
     void Start() {
@@ -42,6 +46,7 @@ public class Ball : MonoBehaviour
         light_end = GameObject.Find("SpotLightEnd").GetComponent<lightend>();
         camera_l = GameObject.Find("Main_camera").GetComponent<cam>();
         losescript = GameObject.Find("SceneManager").GetComponent<LoseScript>();
+        Cursor.visible = false;
     }
 
     void Update() {
@@ -85,6 +90,10 @@ public class Ball : MonoBehaviour
         }
         if (transform.position.z > 23f) {
             sfx.PlayLose();
+            SystemParticule1.SetActive(false);
+            SystemParticule2.SetActive(false);
+            SystemParticule1.SetActive(true);
+            SystemParticule2.SetActive(true);
             velocity = 15;
             score_actuel_1 += 1;
             score.text_j1 = score_actuel_1.ToString();

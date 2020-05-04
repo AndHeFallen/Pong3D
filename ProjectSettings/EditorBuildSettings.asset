@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 48553d2bd1c1c5e4cab20f8083f11f45
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Game-Bois.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Game-Neon.unity
+    guid: dd400231d16ec5c4b8a6e42df028835c
   m_configObjects: {}
