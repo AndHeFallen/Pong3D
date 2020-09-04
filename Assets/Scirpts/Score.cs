@@ -7,7 +7,6 @@ public class Score : MonoBehaviour
 
     private Ball ball;
     private TextMesh t;
-    private moncul A;
 
     public string text_j1;
 
