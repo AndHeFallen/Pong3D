@@ -8,8 +8,6 @@ public class IA : MonoBehaviour
     private Rigidbody rbody;
     private float pos_x;
     private float pos_x_ball;
-    
-    //test 2
 
     public float diffup = 0;
     public float velocity;
